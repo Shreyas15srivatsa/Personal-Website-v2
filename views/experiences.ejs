@@ -1,0 +1,76 @@
+<%- include("./partials/header") %>
+
+<div class="container my-auto">
+	<div class="row" style="margin-top:50px;">
+		<div data-aos="zoom-out-right" class="col-md-4" style="margin-bottom:20px;">
+          <h6 id="heading-font" class="display-4">
+				Experience
+		  </h6>
+        </div>
+		
+		<div data-aos="zoom-out-left" class="col-md-6">
+			<h2 id="heading-font">
+				Full Stack Developer
+			</h2>
+			<a href="https://www.evidencepartners.com/" target="_blank"><span>Evidence Partners Inc. <i class="fa fa-external-link" aria-hidden="true"></i></span></a>
+			<span class="pull-right">January 2020 - April 2020</span>
+			<br/>
+			<br/>
+			<p class="lead">
+				"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 					aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis 				aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 				cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+			</p>
+			
+			<br/>
+			
+			<h2 id="heading-font">
+				Full Stack Developer
+			</h2>
+			<a href="https://www.factorytiledepot.ca/" target="_blank"><span>Factory Tile Depot <i class="fa fa-external-link" aria-hidden="true"></i></span></a>
+			<span class="pull-right">May 2019 - August 2019</span>
+			<br/>
+			<br/>
+			<ul class="lead">
+    <li> Received an <strong>Excellent </strong> Work-term Evaluation for my work as a full stack developer </li>
+    <li> Performed application wide migration from legacy and procedural code to modern OOP</li>
+    <li> Completed over 50+ tasks ranging from developing new features, to troubleshooting and debugging</li>
+    <li> Revamped the company's service portal using PHP, jQuery, & SQL and hosted via AWS</li>
+    <li> Automated the discount offered on products based on a series of rules and reduced the time taken to build an invoice by over 60%</li>
+    <li> Developed PHP scripts using an open source PDO wrapper class to reduce operational errors by automating the process of adding new products to the SQL database</li>
+    <li> Reduced spam emails and inquiries by over 80% by deploying Google's ReCaptcha API to enhance security on the company's website</li>
+    <li> Prevented operational delays by utilizing PHPMailer to auto-generate emails to clients via SMTP</li>
+    <li> Reduced costs by about $0.50 per page by integrating a digital signature pad into the invoice</li>
+    <li> Performed regular database updates and cleanups through Sequel Pro</li>
+    <li> Wrote clean, well documented code, & maintained an efficient Git workflow</li>
+  </ul>	
+			
+		</div>
+	</div>
+</div>
+
+<!-- Divider -->
+<div class="container">
+	<hr>
+</div>
+<br/>
+
+<%- include("./partials/footer") %>
+
+	<!-- Back to top button -->
+	<a href="#" id="back-to-top"></a>  
+	  
+	  <script type="text/javascript">
+		 
+		  var btn = $('#back-to-top');
+		$(window).scroll(function() {
+		  if ($(window).scrollTop() > 300) {
+			btn.addClass('show');
+		  } else {
+			btn.removeClass('show');
+		  }
+		});
+
+		btn.on('click', function(e) {
+		  e.preventDefault();
+		  $('html, body').animate({scrollTop:0}, '300');
+		});
+	  </script>

@@ -1,0 +1,109 @@
+<%- include("./partials/header") %>
+
+<div class="container my-auto">
+<div class="container my-auto">
+	<div class="row" style="margin-top:50px;">
+		<div data-aos="zoom-out-right" class="col-md-4" style="margin-bottom:20px;">
+          <h6 id="heading-font" class="display-4">
+				Projects
+		  </h6>
+        </div>
+		
+		<div data-aos="zoom-out-left" class="col-md-6">
+			<h2 id="heading-font">
+				YelpCamp <br/>
+				<a href="https://damp-beach-88706.herokuapp.com/campgrounds" target="_blank"><small>View Project 
+					<i class="fa fa-external-link" 
+				aria-hidden="true"></i></small></a>
+			</h2>
+			<br/>
+			<span class="lead"><em>Tools: NodeJS, ExpressJS, PassportJS, Mongoose, Heroku</em></span>
+			<br/>
+			<br/>
+			<p class="lead">
+				"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 					aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis 				aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 				cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+			</p>
+			
+			<br/>
+			
+			<h2 id="heading-font">
+				Personal Portfolio <br/>
+				<a href="/" target="_blank"><small>View Project <i class="fa fa-external-link" 
+				aria-hidden="true"></i></small></a>
+			</h2>
+			<br/>
+			<span class="lead"><em>Tools: NodeJS, ExpressJS, Mongoose, HTML5</em></span>
+			<br/> <br/>
+			<p class="lead">
+				"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 					aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis 				aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 				cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+			</p>
+			
+			<br/>
+			
+			<h2 id="heading-font">
+				Employee Management System
+				<a href="https://github.com/Shreyas15srivatsa/Database-system-" target="_blank"><small>View Project 
+					<i class="fa fa-external-link" 
+				aria-hidden="true"></i></small></a>
+			</h2>
+			<br/>
+			<span class="lead"><em>Tools: PHP7, JavaScript, jQuery, HTML</em></span>
+			<br/> <br/>
+			<ul class="lead">
+				<li> Developed a full stack relational database management system hosted on a local XAMPP server</li>
+    			<li> Designed a login page utilizing the $_POST HTTP protocol and PHP sessions</li>
+    			<li> The user has options of searching, sorting, adding, updating, and deleting employee data</li>
+    			<li> Used Open Source PDO wrapper class in PHP to interact with the DB 
+					and process data with a front-end built with HTML, Bootstrap, & jQuery to display the data in a user friendly UI </li>
+			</ul>	
+			
+			<br/>
+			
+			<h2 id="heading-font">
+				LaserTrack <br/>
+				<a href="https://www.evidencepartners.com/" target="_blank"><small>View Project <i class="fa fa-external-link" 
+				aria-hidden="true"></i></small></a>
+			</h2>
+			<br/>
+			<span class="lead"><em>Tools: Raspberry Pi, C, Ubuntu VirtualBox</em></span>
+			<br/> <br/>
+			<ul class="lead">
+				<li> Developed an embedded system powered by a Raspberry Pi that keeps track of the number of people entering and exiting a room using laser and photo diodes</li>
+    			<li> Implemented state-machines to read the config files and track laser breaking sequences</li>
+    			<li> The system runs on a watchdog timer to reboot the Pi in the event of any unexpected run-time errors</li>
+			</ul>
+			
+			<br/>
+		</div>
+	</div>
+</div>
+
+<!-- Divider -->
+<div class="container">
+	<hr>
+</div>
+<br/>
+
+
+
+<%- include("./partials/footer") %>
+
+<!-- Back to top button -->
+<a href="#" id="back-to-top"></a>  
+	  
+<script type="text/javascript">
+		 
+	var btn = $('#back-to-top');
+	$(window).scroll(function() {
+		 if ($(window).scrollTop() > 300) {
+		btn.addClass('show');
+		} else {
+			btn.removeClass('show');
+		}
+	});
+
+	btn.on('click', function(e) {
+		e.preventDefault();
+		$('html, body').animate({scrollTop:0}, '300');
+	});
+</script>

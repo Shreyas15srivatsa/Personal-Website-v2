@@ -1,0 +1,54 @@
+<%- include("./partials/header") %>
+
+<div class="container my-auto">
+	<div class="row" style="margin-top:50px;">
+		<div data-aos="fade-down" data-aos-offset="300" data-aos-easing="ease-in-sine" class="col-md-4">
+          <h6 id="heading-font" class="display-4">
+				Contact Me
+			</h6>
+        </div>
+		<div data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine" class="col-md-6">
+			<p class="lead">
+				Phone: +1 519 729-5554
+				<br/>
+				Email: shreyas.srivatsa@uwaterloo.ca
+			</p>
+			<span class="lead">Connect with me!</span>
+			<a target="_blank" href="https://github.com/Shreyas15srivatsa" title="Github" 
+			   class="btn btn-dark btn-lg fa fa-github" aria-hidden="true"></a>
+			<a target="_blank" href="https://www.linkedin.com/in/shreyas-srivatsa-828745161/" title="LinkedIn" 
+			   class="btn btn-dark btn-lg fa fa-linkedin" aria-hidden="true"></a>
+			<br/>
+			<br/>
+			<p class="lead">
+				Have any questions regarding my experiences or projects? Or maybe you'd want to discuss soccer or tech? 
+				Feel free to contact me for my resume and cover letter!
+			</p>
+		<form method="POST" action="/contactme">
+		  <div class="form-group">
+			<label for="nameInput">Name</label>
+			<input type="text" class="form-control" name="contact[name]" id="nameInput" aria-describedby="emailHelp" required>
+		  </div>
+		  <div class="form-group">
+			<label for="exampleInputEmail1">Email address</label>
+			<input type="email" class="form-control" name="contact[email]" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+			<small id="emailHelp" class="form-text text-muted">I'll never share your email with anyone else.</small>
+		  </div>
+		   <div class="form-group">
+    		<label for="exampleFormControlTextarea1">Question</label>
+   			 <textarea class="form-control" name="contact[question]" id="exampleFormControlTextarea1" rows="3" required></textarea>
+  			</div>	
+		  <button type="submit" class="btn btn-dark">Submit</button>
+		</form>
+			
+		</div>
+	</div>
+</div>
+
+<!-- Divider -->
+<div class="container">
+	<hr>
+</div>
+<br/>
+
+<%- include("./partials/footer") %>
